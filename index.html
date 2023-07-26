@@ -226,7 +226,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.90$ - 18.85$</h2>
-                            
+
                             <hr class="border-1 w-full rounded-full">
                             <p>Apple</p>
                             <div class="rating">
@@ -236,7 +236,29 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            
+                            <div class="Modal1">
+                                <!-- Open the modal using ID.showModal() method -->
+                                <a class="cursor-pointer text-[#F85559]" onclick="my_modal_1.showModal()">Details</a>
+                                <dialog id="my_modal_1" class="modal">
+                                    <form method="dialog" class="modal-box flex flex-col items-center">
+                                        <img src="./images/fruit6.png" alt="Fruits" class="rounded-xl" />
+                                        <h3 class="font-bold text-sm">Apple</h3>
+                                        <p class="py-4">Take an apple Everyday, keeps the doctors away</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div class="modal-action flex justify-center">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close</button>
+                                            <button class="btn bg-[#F85559] normal-case text-white">Buy Now</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
                         </div>
                     </div>
                 </div>
